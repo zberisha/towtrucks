@@ -1,0 +1,62 @@
+/* Ensure the document fills the viewport */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The Leaflet map container fills the entire viewport */
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .leaflet-marker-icon {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .custom-towtruck-marker {
+    background: none !important;
+    border: none !important;
+  }
+
+  .pointer-events-none {
+    pointer-events: none !important;
+  }
+
+  .pointer-events-none * {
+    pointer-events: none !important;
+  }
+  
+  /* Popup container spacing */
+  .leaflet-popup {
+    margin-top: 70px;
+  }
+  
+  /* Popup content styling */
+  .leaflet-popup-content {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .leaflet-popup-content h1 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .leaflet-popup-content p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Image styling for items within the popup */
+  .sheshi {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  
